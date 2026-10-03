@@ -1,7 +1,6 @@
 class Veto < Formula
-  desc "Turn existing OpenAPI services into tools AI agents can discover and call under your rules"
+  desc "Turn OpenAPI services into tools an agent can call under your rules"
   homepage "https://github.com/aiveto/veto"
-  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
