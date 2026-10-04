@@ -5,21 +5,21 @@
 class Veto < Formula
   desc "Turn OpenAPI services into tools an agent can call under your rules."
   homepage "https://github.com/aiveto/veto"
-  version "0.1.6"
+  version "0.1.7"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aiveto/veto/releases/download/v0.1.6/veto_Darwin_x86_64.tar.gz"
-      sha256 "6ef1ce311e213fe7d9e7ded7c778de8aa717da0db3a1c9e1009d350818912fd7"
+      url "https://github.com/aiveto/veto/releases/download/v0.1.7/veto_Darwin_x86_64.tar.gz"
+      sha256 "035b8fb955d5b41a626e543101b42af6a44afa71c7edab7b2ffbd0f7bdbfbed0"
 
       define_method(:install) do
         bin.install "veto"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aiveto/veto/releases/download/v0.1.6/veto_Darwin_arm64.tar.gz"
-      sha256 "4ac163ee29afd3456daec9e100dc03e72875a3527ab8010b57b1d0bdc62c188c"
+      url "https://github.com/aiveto/veto/releases/download/v0.1.7/veto_Darwin_arm64.tar.gz"
+      sha256 "a28212c6539dd4593e236290e5dc577540fc35ac2f4f2ccf118579e84c649f5e"
 
       define_method(:install) do
         bin.install "veto"
@@ -29,15 +29,15 @@ class Veto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aiveto/veto/releases/download/v0.1.6/veto_Linux_x86_64.tar.gz"
-      sha256 "3935d31aa3795a34f00c0fe12f4077a1cc97aca755b762c98c37032123d55a53"
+      url "https://github.com/aiveto/veto/releases/download/v0.1.7/veto_Linux_x86_64.tar.gz"
+      sha256 "aa0ca9d59cf9063ca42141609549167e55cf0f4e1924966d61130c7717e2e02b"
       define_method(:install) do
         bin.install "veto"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aiveto/veto/releases/download/v0.1.6/veto_Linux_arm64.tar.gz"
-      sha256 "f106c43f0bb80e1c2c791c5a2f4b833d6f8aad587eaa1dd02b909289f4fbf7f5"
+      url "https://github.com/aiveto/veto/releases/download/v0.1.7/veto_Linux_arm64.tar.gz"
+      sha256 "47122a0c751c453f20893b150155cf48cb8eb75dbad74af8dbb71f2670d4731f"
       define_method(:install) do
         bin.install "veto"
       end
